@@ -15,9 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WebSocketController::class, 'random_data'])->name('random_data');
 Route::get('test', [WebSocketController::class, 'index'])->name('test');
-Route::get('random_data', [WebSocketController::class, 'random_data'])->name('random_data');;
 Route::get('fakedata', [FakeDataController::class, 'fakedata']);
