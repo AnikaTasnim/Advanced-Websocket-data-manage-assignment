@@ -64,6 +64,14 @@ Import database from mySql folder locate in root directory:
 ```
  \Advanced-Websocket-data-manage-assignment\mySql
 ```
+run arisan command:
+ ```bash
+ php artisan serve 
+ php artisan websockets:serve
+
+```
+
+
 ## Usage/Examples
 
 
